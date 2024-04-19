@@ -9,4 +9,14 @@ class CountProvider extends ChangeNotifier {
     _count++;
     notifyListeners();
   }
+
+  void decrement() {
+    _count--;
+    notifyListeners();
+  }
+
+  void restore() {
+    _count = 0;
+    notifyListeners();
+  }
 }
